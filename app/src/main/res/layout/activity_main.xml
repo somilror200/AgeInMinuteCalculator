@@ -100,7 +100,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:layout_marginLeft="31dp"
         android:text="somilror200@gmail.com"
         android:textColor="@color/introGray"
         android:textSize="14sp"

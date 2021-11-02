@@ -42,28 +42,30 @@ class MainActivity : AppCompatActivity() {
         //    view, year, month, dayOfMonth ->
         //    Toast.makeText(this, "Date picker works", Toast.LENGTH_SHORT).show()
         //}, year, month, day).show()
-        DatePickerDialog(this,
-        { _, selectedYear, selectedMonth, selectedDayOfMonth ->
-            Toast.makeText(this, "Date picker works", Toast.LENGTH_SHORT).show()
+        val datePickerDialog = DatePickerDialog(this,
+            { _, selectedYear, selectedMonth, selectedDayOfMonth ->
+                Toast.makeText(this, "Date picker works", Toast.LENGTH_SHORT).show()
 
-            val selectedDate = "$selectedDayOfMonth/${selectedMonth+1}/$selectedYear"
-            textSelectedDate?.text = selectedDate
+                val selectedDate = "$selectedDayOfMonth/${selectedMonth+1}/$selectedYear"
+                textSelectedDate?.text = selectedDate
 
-            val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
+                val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
 
-            val theDate = sdf.parse(selectedDate)
-            theDate?.let{
-                val selectedDateInMinutes = theDate.time / 60000
-                val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
-                currentDate?.let {
-                    val currentdateInMinutes = currentDate.time / 60000
+                val theDate = sdf.parse(selectedDate)
+                theDate?.let{
+                    val selectedDateInMinutes = theDate.time / 60000
+                    val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
+                    currentDate?.let {
+                        val currentdateInMinutes = currentDate.time / 60000
 
-                    val differenceInMinutes = currentdateInMinutes - selectedDateInMinutes
-                    textAgeInMinutes?.text = differenceInMinutes.toString()
+                        val differenceInMinutes = currentdateInMinutes - selectedDateInMinutes
+                        textAgeInMinutes?.text = differenceInMinutes.toString()
+                    }
                 }
-            }
 
-        }, year, month, day).show()
+            }, year, month, day)
 
+        datePickerDialog.datePicker.maxDate = System.currentTimeMillis() - 86400000
+        datePickerDialog.show()
     }
 }
