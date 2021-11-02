@@ -49,10 +49,11 @@
         android:textSize="18sp"/>
 
     <TextView
+        android:id="@+id/selectedDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="13/07/2002"
+        android:text=""
         android:textColor="@color/textBGColor"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -60,17 +61,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="1dp"
         android:text="SELECTED DATE"
         android:textColor="@color/lightGray"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="bold"/>
 
     <TextView
+        android:id="@+id/ageInMinutes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="14000000"
+        android:text=""
         android:textColor="@color/textBGColor"
         android:textSize="35sp"
         android:textStyle="bold"/>
@@ -78,10 +80,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="1dp"
         android:text="SELECTED DATE"
         android:textColor="@color/lightGray"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="bold"/>
 
 </LinearLayout>
