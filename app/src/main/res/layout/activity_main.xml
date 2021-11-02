@@ -43,6 +43,7 @@
         android:id="@+id/btnDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:backgroundTint="@color/buttonBG"
         android:textColor="@color/textBGColor"
         android:text="SELECT DATE"
@@ -83,6 +84,25 @@
         android:layout_marginTop="1dp"
         android:text="SELECTED DATE"
         android:textColor="@color/lightGray"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="Made by: Somil"
+        android:textColor="@color/introGray"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="31dp"
+        android:text="somilror200@gmail.com"
+        android:textColor="@color/introGray"
         android:textSize="14sp"
         android:textStyle="bold"/>
 

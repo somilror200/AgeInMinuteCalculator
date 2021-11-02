@@ -12,4 +12,5 @@
     <color name="textBGColor">#1D3557</color>
     <color name="buttonBG">#a8dadc</color>
     <color name="lightGray">#ccd5ae</color>
+    <color name="introGray">#A6AA98</color>
 </resources>
