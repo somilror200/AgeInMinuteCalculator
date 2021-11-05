@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:text="SELECTED DATE"
+        android:text="AGE IN MINUTES"
         android:textColor="@color/lightGray"
         android:textSize="14sp"
         android:textStyle="bold"/>
